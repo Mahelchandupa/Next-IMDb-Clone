@@ -9,6 +9,7 @@ const Card = ({ result }) => {
             <Image
                 className='sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-300'
                 src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
+                alt={result.title || result.name}
                 height={300}
                 width={500}
             ></Image>
